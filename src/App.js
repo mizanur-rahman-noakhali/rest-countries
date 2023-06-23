@@ -8,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import CountryDetail from './components/CountryDetail/CountryDetail';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
     <Routes>
     <Route  path="/home" element={<Home/>}/>
     <Route exact path="/" element={<Home/>}/>
-    { <Route  path="*" element={<NoMatch/>}/>  }
+    <Route path="/country/:CountryCode" element={<CountryDetail/>}/>
+    <Route  path="*" element={<NoMatch/>}/>  
     </Routes>
    </Router>
   );
