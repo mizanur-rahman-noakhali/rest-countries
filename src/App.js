@@ -16,7 +16,7 @@ function App() {
     <Routes>
     <Route  path="/home" element={<Home/>}/>
     <Route exact path="/" element={<Home/>}/>
-    <Route path="/country/:CountryCode" element={<CountryDetail/>}/>
+    <Route path="/name/:name" element={<CountryDetail/>}/>
     <Route  path="*" element={<NoMatch/>}/>  
     </Routes>
    </Router>
